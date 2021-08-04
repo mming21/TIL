@@ -40,6 +40,15 @@
 
   * `..` : 상위 디렉토리
   * `.` : 현재 디렉토리
+  
+### 파일 라이프 사이클
+
+  * Working directory의 모든 파일은 특정상태를 가지며, git 명령어를 통해 변경
+    * Tracked: 이전부터 버전으로 관리되고 있는 파일
+      * Unmodified: git status에 나타나지 않음
+      * Modified
+      * Staged
+    * Untracked: 버전으로 관리된 적 없는 파일(파일을 새로 만든 경우)
 
 ```bash
 $ git status
@@ -100,8 +109,14 @@ Untracked files:
 * __pwd__: print working directory. 현재 폴더 위치 알려줘
 * __mkdir test__: make directory. 디렉토리 생성.
 * __cd test__: change directory. 경로 바꿈
-* __git reset__: 삭제
+* __git reset__: 시계를 다시 맞추듯 이력을 그 당시로 되돌리는 것. 돌아가려는 커밋으로 repository는 재설정되고 ,해당 커밋 이후의 이력은 사라짐. 
 * __git clone 주소명__: 복사하기
+* __ctrl + slash__: 소스코드 모드로 전환하는 단축키
+* __git remote rm origin__: remove의 약자. 리모트 저장소 삭제. 
+* __git remote__
+  * git remote에 대한 설명 (https://terms.naver.com/entry.naver?docId=4125980&cid=59321&categoryId=59321)
+  * 파일명을 변경하거나 이동
+* __git log --oneline__: 커밋 로그에서 한 줄에 한 커밋씩 표시한다
 
 
 
@@ -119,7 +134,27 @@ Untracked files:
   * git remote add origin 주소(url) => 깃아….원격저장소(remote) 추가해줘 .(add) origin 이라는 이름으로. origin이 url 대신 붙이는 이름.
   * git push origin master
 
+### 읽어보면 좋을 사이트
+
+* https://d2.naver.com/news/3435170 네이버 개발자 후기
+* https://minieetea.com/2021/04/archives/6193 잘 정리된 이력서보다 중요한 것
+* https://github.com/JaeYeopHan/Interview_Question_for_Beginner 개발자들 유용한 정보
+* https://gather.town/invite?token=KeTiMZCr 온라인 상 클래스룸
+* https://blog.ull.im/engineering/2019/03/10/logs-on-git.html git 영어사전
+* google java style guide
+* https://brunch.co.kr/@kakao-it/38 카카오 택시가 바꿔놓은 대중교통 지도
 
 
-> 너무......어렵다......복잡하다.......하지만........난...할수있다^^...!
+
+### 검색하다 내가 찾은 사이트
+
+* https://mylko72.gitbooks.io/git/content/remote/remove.html git 설명 및 사용법
+* https://blog.naver.com/hunii123/222430777459 git 용어 정리
+* https://mac-user-guide.tistory.com/57 깃헙에 폴더 추가하는 법
+
+
+
+> 오늘의 수업 후기.
+
+![1](D:\문서\image\1572012608927.jpg)
 
